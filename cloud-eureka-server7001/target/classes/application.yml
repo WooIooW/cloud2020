@@ -8,7 +8,8 @@ eureka:
     fetch-registry: false #false表示自己就是注册中心，我的职责就是维护服务实例,并不区检索服务
     service-url:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 不搭建集群 单机 指向自己
-       defaultZone: http://eureka7002.com:7002/eureka/ # 不搭建集群 单机 指向自己
-  server:
-    enable-self-preservation: false
-    eviction-interval-timer-in-ms: 2000
+#      defaultZone: http://eureka7001.com:7002/eureka/ # 搭建集群 单机 指向其它服务
+       defaultZone: http://eureka7001.com:7001/eureka/ # 不搭建集群 单机 指向自己
+#  server:
+#    enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 2000
